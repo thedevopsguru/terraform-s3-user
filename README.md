@@ -36,11 +36,11 @@ A Terraform module that creates a tagged S3 bucket and an IAM user/key with acce
 ```hcl
 provider "aws" {
   region  = "us-east-1"
-  profile = "digital-sandbox"
+  profile = "my-sandbox"
 }
 
 module "s3_user" {
-  source = "github.com/thedevopsguru/terraform-s3-user?ref=v"
+  source = "github.com/thedevopsguru/terraform-s3-user?ref=master"
 
   bucket_name = "my-bucket"
 
